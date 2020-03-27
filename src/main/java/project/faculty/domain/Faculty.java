@@ -2,11 +2,27 @@ package project.faculty.domain;
 
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "faculty_name")
 public class Faculty {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private FacultyName facultyName;
+	
+	@Column(name = "numbers_of_student")
 	private Integer numberOfStudent;
+	
+	@ElementCollection
 	private List<Subject> subject;
 	
 	public Faculty() {super();
