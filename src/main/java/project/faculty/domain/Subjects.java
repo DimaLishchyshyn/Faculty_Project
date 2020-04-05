@@ -1,5 +1,5 @@
 package project.faculty.domain;
 
-public enum Subject {
+public enum Subjects {
 	HISTORY, PROGRAMMING, BIOLIGY, SOCIOLOGY, TEHNOLOGY, AGRO;
 }

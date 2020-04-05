@@ -26,11 +26,6 @@ public class CustomUserDetails extends User implements UserDetails{
 		return AuthorityUtils.commaSeparatedStringToAuthorityList(roles);
 	}
 
-//	@Override
-//	public String getPassword() {
-//		return super.getPassword();
-//	}
-
 	@Override
 	public String getUsername() {
 		return super.getEmail();
