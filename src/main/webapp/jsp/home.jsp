@@ -60,7 +60,7 @@
 							<div class="w3-container w3-center">
 								<h3>${currentEntrant.firstName}</h3>
 								<h3>${currentEntrant.lastName}</h3>
-								<p>${currentEntrant.faculty}</p>
+								<h3>${currentEntrant.faculty}</h3>
 
 							</div>
 							<button class="w3-button w3-block w3-dark-grey">+ add to
@@ -75,9 +75,5 @@
 
 
 	</div>
-	<!-- /container -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
 </html>

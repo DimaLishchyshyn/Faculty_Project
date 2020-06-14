@@ -55,37 +55,7 @@
 						</tr>
 						<tr>
 							<td>Faculty</td>
-							<td>
-								<%
-								    try{
-								//Class.forName("com.mysql.jdbc.Driver").newInstance();
-								Connection connection = 
-								         DriverManager.getConnection
-								            ("jdbc:mysql://localhost/project?user=root&password=9891308");
-								
-								       Statement statement = connection.createStatement() ;
-								
-								       resultset =statement.executeQuery("select * from faculty") ;
-								%>
-								
-							
-								        <select name="faculty">
-								        <%  while(resultset.next()){ %>
-								            <option value = <%= resultset.getInt(1) %>><%= resultset.getString(2) %></option>
-								        <% } %>
-								        </select>
-								
-								
-								<%
-								//**Should I input the codes here?**
-								        }
-								        catch(Exception e)
-								        {
-								             out.println("wrong entry"+e);
-								        }
-								%>
-								
-							</td>
+							<td><input type="text" name="faculty" /></td>
 						</tr>
 						
 						<tr>
@@ -108,10 +78,5 @@
 
 
 	</div>
-	<!-- /container -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
-
 </body>
 </html>
