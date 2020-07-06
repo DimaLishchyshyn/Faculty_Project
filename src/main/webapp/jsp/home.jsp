@@ -34,7 +34,7 @@
 			<a href="/create-entrant" class="w3-bar-item w3-button">Create entrant</a> 
 			</security:authorize>
 				
-			<a href="#" class="w3-bar-item w3-button">All entrants</a>
+			
 		</div>
 
 
